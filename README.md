@@ -1,5 +1,5 @@
 # Play!Java Ebean Seed
-[![MIT License][license-badge]][license]
+![GitHub](https://img.shields.io/github/license/ECMGit/play-java-ebean-seed)
 
 update date: 03/09/2023  
 Author: Junhao Shen [junhaos@smu.edu]
