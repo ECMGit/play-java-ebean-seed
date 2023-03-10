@@ -9,17 +9,17 @@ OS support:
 - Ubuntu 20.04
 
 ## Prerequisite:
-Java version: 11.0.18
-Scala Version: 2.13.10
-Play! Framework version: 2.18.19
-sbt version: 1.7.2
-Docker
+- Java version: 11.0.18
+- Scala Version: 2.13.10
+- Play! Framework version: 2.18.19
+- sbt version: 1.7.2
+- Docker
 
 Version compatibility table[https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html]
 
 ## Plugins
 - ORM: [PlayEbean](https://www.playframework.com/documentation/2.6.x/JavaEbean)
-- Managing database evolutions: [Evolution](https://www.playframework.com/documentation/2.8.x/Evolutions)
+- Managing database evolutions: [evolutions](https://www.playframework.com/documentation/2.8.x/Evolutions)
 - Configuring JDBC connection pools: [javaJdbc](https://www.playframework.com/documentation/2.8.19/AccessingAnSQLDatabase)
 
 - Configuring the JDBC Driver dependency(e.g. mysql5): `"mysql" % "mysql-connector-java" % "5.1.41"` 
