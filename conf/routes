@@ -6,11 +6,14 @@
 GET     /                           controllers.HomeController.index
 
 #Login
-POST     /login                      controllers.UserController.authenticate(request: Request)
+POST     /user/login                      controllers.UserController.authenticate(request: Request)
 
 
 # Add User  {"name":name, "password":password}
-POST    /signup                      controllers.UserController.registerNew(request: Request)
+POST    /user/signup                      controllers.UserController.registerNew(request: Request)
 
 # Update user info
-POST    /updateUser                  controllers.UserController.updateUser(request: Request)
+POST    /user/updateUser                  controllers.UserController.updateUser(request: Request)
+
+# Get user info by ID
+GET     /user/userDetailByID/:userId              controllers.UserController.userDetailByID(userId: Long)
