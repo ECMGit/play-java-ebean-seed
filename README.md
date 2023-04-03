@@ -2,7 +2,7 @@
 ![GitHub](https://img.shields.io/github/license/ECMGit/play-java-ebean-seed)
 
 update date: 03/09/2023  
-Author: Junhao Shen
+Author: Junhao Shen, Beichen Hu
 
 OS support:
 - MacOS Ventura 13.0 Apple M2 Chips
