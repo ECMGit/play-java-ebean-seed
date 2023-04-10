@@ -29,20 +29,17 @@ public class UserController extends Controller {
      * @return User Json node if success, or 'false'
      */
     public Result authenticate(Http.Request request) {
-        Logger.info("In authenticate");
+        Logger.info("In authenticate. ");
         JsonNode req = request.body().asJson();
         // get username from frontend
         String username = req.get("username").asText();
         // get user password from frontend
         String password = req.get("password").asText();
-
-        Logger.info("current username: " + username + " current password: " + password);
         try {
             User user = User.findByName(username); // ( match where username and password both match )
             if(user!=null && username.equals(user.username) && password.equals(user.password)){
                 // translate from User object to Json object then return to frontend
                 JsonNode response = Json.toJson(user);
-                Logger.info("Pass Authentication: User Info: " + response.toString());
                 return ok(response.toString());
             }else{
                 return Common.badRequestWrapper("Authenticate failed. ");
@@ -62,13 +59,12 @@ public class UserController extends Controller {
      * @return success if valid, fail if already taken
      */
     public Result registerNew(Http.Request request) {
-        System.out.println("In register");
+        Logger.info("In register. ");
         JsonNode req = request.body().asJson();
         String username = req.get("username").asText();
         // get user info by 'username'
         User u = User.findByName(username);
         if (u == null) {
-            System.out.println("new user added..");
             // Parse User from Json to User object (func: Json.fromJson()).
             User user = Json.fromJson(req, User.class);
             user.save();
@@ -91,13 +87,12 @@ public class UserController extends Controller {
             return Common.badRequestWrapper("Update failed");
         }
         try {
-            System.out.println("In Update User: "+ json.toString());
+            Logger.info("In Update. ");
             String username = json.get("username").asText();
             User user = User.findByName(username);
             // if user found, then make the update.
             if (user != null) {
                 user = Json.fromJson(json, User.class);
-                System.out.println(user.getFirstName() + user.getLastName() + user.getId() + user.getPassword() + user.getUsername());
                 // user.updateFromJson(json);
                 user.update();
                 return ok(Json.toJson(user).toString());
