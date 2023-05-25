@@ -1,15 +1,31 @@
-2023-03-31 16:33:13,102 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
-2023-03-31 16:33:13,110 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
-2023-03-31 16:33:13,178 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - datasource [default] bound to JNDI as DefaultDS
-2023-03-31 16:33:14,025 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-05-25 15:54:31,168 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
+2023-05-25 15:54:31,174 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2023-05-25 15:54:31,223 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - datasource [default] bound to JNDI as DefaultDS
+2023-05-25 15:54:31,808 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
 
-2023-03-31 16:33:14,059 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
-2023-03-31 16:34:21,432 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-9-thread-3 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
-2023-03-31 16:34:21,435 [INFO] from play.core.server.AkkaHttpServer in pool-9-thread-3 - Stopping Akka HTTP server...
-2023-03-31 16:34:21,441 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9005
-2023-03-31 16:34:21,469 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
-2023-03-31 16:34:21,514 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-13 - Running provided shutdown stop hooks
+2023-05-25 15:54:31,833 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2023-05-25 15:54:32,023 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 15:54:32,030 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: Junhaos@smu.edu current password: junhaos
+2023-05-25 15:56:21,309 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 15:56:21,309 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: Junhaos@smu.edu current password: junhaos
+2023-05-25 16:08:44,918 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 16:08:44,918 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: Junhaos@smu.edu current password: junhaos
+2023-05-25 16:09:40,874 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 16:09:40,874 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: Junhaos@smu.edu current password: junhaos
+2023-05-25 16:10:35,880 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 16:10:35,880 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: Junhaos@smu.edu current password: junhaos
+2023-05-25 16:11:18,135 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 16:11:18,135 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: Junhaos@smu.edu current password: junhaos
+2023-05-25 16:12:03,303 [INFO] from application in application-akka.actor.default-dispatcher-7 - In authenticate
+2023-05-25 16:12:03,303 [INFO] from application in application-akka.actor.default-dispatcher-7 - current username: junhaos@smu.edu current password: junhaos
+2023-05-25 16:12:03,364 [INFO] from application in application-akka.actor.default-dispatcher-7 - Pass Authentication: User Info: {"id":1,"username":"junhaos@smu.edu","password":"junhaos","firstName":"Junhao","lastName":"Shen"}
+2023-05-25 16:13:30,993 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-9-thread-5 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2023-05-25 16:13:30,996 [INFO] from play.core.server.AkkaHttpServer in pool-9-thread-5 - Stopping Akka HTTP server...
+2023-05-25 16:13:31,004 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-12 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2023-05-25 16:13:31,023 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-5 - Shutting down connection pool.
+2023-05-25 16:13:31,069 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
